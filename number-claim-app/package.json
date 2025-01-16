@@ -1,16 +1,19 @@
 {
   "name": "number-claim-app",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "setup-db": "node scripts/setup-database.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "@supabase/supabase-js": "^2.47.15",
-    "vite": "^6.0.7"
+    "@supabase/supabase-js": "^2.39.0",
+    "fingerprintjs2": "^2.1.4"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "dotenv": "^16.3.1"
   }
 }
